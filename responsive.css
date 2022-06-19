@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+main {
+    background-color: rgb(215, 134, 134);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 85%;
+    text-align: center;
+    margin: auto 0;
+    color: white;
+    padding-bottom: 4rem;
+    
+
+}
+
+.top-content h2 {
+    font-size: 1.3rem;
+    padding: 1.6rem;
+}
+
+.top-content p {
+    font-size: 0.85rem;
+    padding: 0.1rem 0.7rem 0.9rem;
+}
+
+.bottom-content button {
+    height: 3.5rem;
+    width: 85%;
+    color: white;
+    background-color: rgba(65, 65, 114, 0.96);
+    border-radius: 0.5rem;
+    border-color: transparent;
+    padding: 1rem 2rem 2.8rem;   
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+
+.bottom-content #try {
+    font-weight: 800;
+}
+
+form {
+    width: 85%;
+    border: transparent;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+    padding: 0.2rem 0;
+}
+
+form #fname,
+#lname,
+#email,
+#password {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 85%;
+    padding: 0.7rem;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    margin: 0.7rem 0;
+
+}
+
+form #form-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(34, 166, 166);
+    color: white;
+    width: 85%;
+    border: transparent;
+    padding: 0.8rem 1.3rem;
+    border-radius: 0.3rem;
+}
+
+
+
+form p {
+    color: gray;
+    font-size: 0.75rem;
+    width: 85%;
+    margin: 0.8rem auto;
+
+}
+
+a[id="terms"]:link {
+    color: red;
+}
+
+a[id="terms"]:active {
+    color: green;
+}
+
+a[id="terms"]:hover {
+    color: green;
+}
+
+/* screen for tablet */
+@media only screen and (min-width: 700px) {
+    body{
+        display: flex;
+    }
+    
+     main{
+        /* height: 100%; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    .top-content{
+        width: 45%;
+        text-align: left;
+    }
+    
+    .bottom-content{
+        width: 45%;
+    }
+
+    .top-content h2 {
+        font-size: 1.5rem;
+        padding: 1.6rem 0;
+    }
+
+    .top-content p {
+        font-size: 0.6rem;
+        padding: 0.1rem 0rem 0.9rem;
+    }
+
+    .bottom-content #fbutton {
+        /* height: 2.5rem; */
+        padding: 1rem 1rem 2rem;
+        font-size: 0.6rem;
+    }
+
+    .bottom-content #try {
+        font-weight: 800;
+    }
+
+    form #form-button {
+        font-size: 0.7rem;
+        padding: 0.5rem 1.3rem;
+       
+    }
+
+    form{
+    
+    }
+
+    form p {
+        font-size: 0.4em;
+        margin: 0.8rem auto 1.3rem;
+
+    }
+
+    a[id="terms"]:link {
+        color: red;
+    }
+
+    a[id="terms"]:active {
+        color: green;
+    }
+
+    a[id="terms"]:hover {
+        color: green;
+    }
+
+}
+
+/* screen for PC */
+@media only screen and (min-width: 1000px){
+
+    body{
+        background-color: rgb(215, 134, 134);
+    }
+
+    main{
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    .top-content{
+        width: 50%;
+        padding: 0 ;
+        margin: 0 3% 0 7%;
+    }
+    
+    .bottom-content{
+        width: 50%;
+        padding: 0 ;
+        margin: 0 7% 0 0;
+    }
+
+    .top-content h2 {
+        font-size: 2.3rem;
+        
+    }
+
+    .top-content p {
+        font-size: 0.8rem; 
+    }
+
+}
